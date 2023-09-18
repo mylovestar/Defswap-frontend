@@ -1,0 +1,72 @@
+IMAGES 
+
+apps/web/public/images
+
+
+
+LOOK
+
+Colors: packages/ui/tokens/colors.ts
+
+shadows,fonts, space, radii, borderWidths, fontSizes: packages/ui/tokens/index.ts
+
+
+
+
+APP
+
+apps/web/src/pages/_app.tsx
+
+
+
+
+ROUTES
+
+Routes and metadata: apps/web/src/config/constants/meta.ts
+
+
+
+TEXT
+
+Display text / translations: 
+apps/web/public/locales/
+(en-US file is now also used as translation)
+for English additional file:
+packages/localization/src/config/translations.json
+instead
+
+Supported translations: packages/localization/src/config/languages.ts
+
+
+
+PAGES
+
+Home: apps/web/src/views/Home/index.tsx
+Home Banners: apps/web/src/views/Home/components/Banners
+Hero: apps/web/src/views/Home/components/Hero.tsx
+Stats: apps/web/src/views/Home/components/MetricsSection/index.tsx
+
+
+Swap Page: apps/web/src/views/Swap/index.tsx
+
+
+
+MENU 
+
+Menu items: apps/web/src/components/Menu/config/config.ts
+
+
+
+CHAINS / TOKENS
+
+Network switcher
+apps/web/src/components/NetworkSwitcher.tsx
+
+Add token files with chainIdNr in 
+packages/tokens/src/
+
+Add chainIds, FACTORY_ADDRESS and INIT_CODE_HASH in 
+packages/swap-sdk/src/constants.ts
+and compile to adjust
+packages/swap-sdk/dist/index.d.ts
+packages/swap-sdk/dist/index.mjs
