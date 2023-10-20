@@ -5,12 +5,7 @@ import { SpinnerProps } from "./types";
 const Spinner: React.FC<React.PropsWithChildren<SpinnerProps>> = ({ size = 128 }) => {
   return (
     <Box width={size} height={size * 1.197} position="relative">
-      <Image
-        width={size}
-        height={size * 1.197}
-        src="https://pancakeswap.finance/images/pancake-3d-spinner.gif"
-        alt="pancake-3d-spinner"
-      />
+      <img src="/images/deflogo.png" alt="" />
     </Box>
   );
 };
